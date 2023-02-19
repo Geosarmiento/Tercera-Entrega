@@ -61,7 +61,7 @@ section {
   margin: auto;
   display: flex;
   justify-content: center;
-  height: 600px; }
+  height: auto; }
   section .foto_perfil {
     background-image: url("../assets/img/perfil.png");
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ button {
 
 /*MAIN*/
 main {
-  width: 100%;
+  width: 1044px;
   height: 90vh; }
 
 /*FOTTER*/
@@ -155,7 +155,6 @@ footer {
 
 /*GALLERY*/
 .container_galeria {
-  background-color: #156656;
   width: 1044px;
   margin: 50px auto;
   display: grid;
@@ -172,7 +171,7 @@ footer {
   grid-column: 1;
   grid-row: 1 / 4;
   justify-items: center;
-  height: 300px;
+  height: 450px;
   background-image: url("../assets/img/exhibidorpintura.jpg");
   background-repeat: no-repeat;
   background-position: center;
