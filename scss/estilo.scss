@@ -88,7 +88,7 @@ section {
     margin: auto;
     display: flex;
     justify-content: center;
-    height: 600px;
+    height: auto;
     
             
         
@@ -148,8 +148,9 @@ section {
 
 /*MAIN*/ 
         main{
-            width: 100%;
+            width: 1044px;
             height: 90vh;
+            
         }
 
 
@@ -157,6 +158,7 @@ section {
         footer{
             width: 100%;
             text-align: center;
+            
 
 
 }
@@ -221,7 +223,7 @@ section {
 
 
 .container_galeria{
-    background-color: #156656;
+  
     width: 1044px;
     margin: 50px auto;
     display: grid;
@@ -238,7 +240,7 @@ section {
     grid-column: 1;
     grid-row: 1 / 4;
     justify-items: center;
-    height: 300px;
+    height: 450px;
     background-image: url("../assets/img/exhibidorpintura.jpg");
     background-repeat: no-repeat;
     background-position: center;
