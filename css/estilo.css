@@ -104,6 +104,16 @@ button {
   margin-left: 20px;
   cursor: pointer; }
 
+/*MAIN*/
+main {
+  width: 100%;
+  height: 90vh; }
+
+/*FOTTER*/
+footer {
+  width: 100%;
+  text-align: center; }
+
 /*CONTACTO*/
 .container-fluid {
   background-color: #feffff;
