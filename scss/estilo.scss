@@ -8,46 +8,17 @@ $degradado: linear-gradient(45deg,#3023AE 0%,#FF0099 200%);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Uchen&display=swap');
 
+@import "header" ;
+@import "contact";
+@import "fotter";
+@import "about";
+
 body{
     background: -webkit-linear-gradient(left,  #d2ebf9 13%,#feffff 100%); /* Chrome10-25,Safari5.1-6 */
     ;
- 
    }
 
-header{
-    width: 100%;
 
-    height: 70px;
-    display: flex;
-
-        nav{ 
-            margin:  auto;
-            width:800px;
-        }
-        nav ul{
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-        nav ul a{
-            color: black;
-            text-decoration: none;
-            padding: 15px 20px;
-        }
-         nav ul a:hover {
-            transform: scaleX(0,5, 0);
-            transition: all 2s ease-out;
-            border-bottom: 1px solid black;
-        }
-        nav ul a:active{
-            border-bottom: 1px solid #252525;
-        }
-            nav ul li:hover ul{
-            display: block;  
-        }
-            
-        }
         .hamburguesa{
             display: none;
         }
@@ -154,205 +125,12 @@ section {
         }
 
 
-/*FOTTER*/
-        footer{
-            width: 100%;
-            text-align: center;
-            
-
-
-}
-
-
-/*CONTACTO*/
- 
-    .container-fluid{
-        background-color: #feffff;
-        border-radius: 20px;
-        padding: 50px ;
-        width: 600px;
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 45px;
-        -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
-        -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
-        box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
-        h2{
-            padding: 20px;
-            text-align: center;
-        }
-        .button{
-            display: flex;
-            justify-content: center;
-
-        }
-    }
-
-/*ABOUt*/
-.container_about{
-    display: flex;
-    margin-top: 50px;
-    gap: 40px;
-    
-   
-    .container_barras{
-        width: 95%;
-        height: 300px;
-    }
-
-    .parte1{
-        width: 500px;
-        
-    }
-    .parte2{
-        padding: 20px;
-        width: 400px;
-        background-color: #ffffff;
-        border-radius: 20px;
-        -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
-        -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
-        box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
-    }
-
-}
-
-
-/*GALLERY*/
 
 
 
-.container_galeria{
-  
-    width: 1044px;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-}
-.imgs:hover {
-    cursor: pointer;
-    border: 2px solid #feffff;
-}
-.img1{
-    background-color: #123456;
-    grid-column: 1;
-    grid-row: 1 / 4;
-    justify-items: center;
-    height: 450px;
-    background-image: url("../assets/img/exhibidorpintura.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
 
-}
-.img2{
-    background-color: #2080e0;
-    grid-column: 2 / 2;
-    grid-row: 1;
-    text-align: center;
-    background-image: url("../assets/img/10.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    
-}
-.img3{
-    background-color: #205612;
-    
-    grid-column: 3  / 3;
-    grid-row: 1 / 3;
-    background-image: url("../assets/img/6.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    
-}
-.img4{
-    background-color: #123456;
-    grid-column: 4 / 4;
-    grid-row: 1 /3;
-    background-image: url("../assets/img/8.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    
-}
-.img5{
-   background-color: #4c5612;
-    grid-column: 2 / 2;
-    grid-row: 2 / 4 ;
-    background-image: url("../assets/img/11.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-   
-}
-.img6{
-    background-color: #156656;
-    grid-column: 3 / 5;
-    grid-row: 3;
-    background-image: url("../assets/img/Dulce\ celestial2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-}
 
 /*EXPERIENCEIAS*/
-
-.container_experience{
-        width: 1044px;
-        margin: auto;
-
-        h1, p{
-            max-width: 950px;
-            padding: 5px 20px;
-        }
-     
-
-     }  
-
-     .contenedor_experiencias{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        
-        
-        article{
-            width: 280px;
-            height: auto;
-            background-color: white;
-            padding: 10px;
-            margin: 10px;
-            -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
-            -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
-            box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.22);
-            justify-content: center;
-            align-items: center;
-            border-radius: 15px;
-            H2, p{
-                padding: 10px 20px;
-                text-align: center;
-
-            }
-            
-
-
-            img{
-                width: 100%;
-                border-radius: 7px;
-            }
-        }
-        
-     }
 
 
 
