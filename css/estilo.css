@@ -11,6 +11,8 @@ header {
   header nav {
     margin: auto;
     width: 800px; }
+    header nav .cerrar {
+      display: none; }
   header nav ul {
     list-style: none;
     display: flex;
@@ -28,6 +30,41 @@ header {
     border-bottom: 1px solid #252525; }
   header nav ul li:hover ul {
     display: block; }
+
+@media screen and (max-width: 640px) {
+  header {
+    width: 100%; }
+    header nav {
+      left: -50px;
+      position: relative;
+      margin-top: 60px;
+      width: 80%;
+      background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 200%);
+      height: 100vh;
+      z-index: 99999;
+      opacity: .95; }
+      header nav ul {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        right: -60px; }
+      header nav li {
+        width: 100%;
+        padding: 20px 30px;
+        color: white;
+        text-align: end; }
+      header nav li:hover {
+        border-radius: 15px 0px 0px 0px;
+        background-color: #f1f1f1;
+        color: white; }
+      header nav nav ul a:hover {
+        color: white; }
+      header nav a {
+        color: white; }
+  .hamburguesa {
+    display: block;
+    padding: 20px;
+    cursor: pointer; } }
 
 /*CONTACTO*/
 .container-fluid {
@@ -47,7 +84,8 @@ header {
     text-align: center; }
   .container-fluid .button {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 30px; }
 
 /*FOTTER*/
 footer {

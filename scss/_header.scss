@@ -7,6 +7,9 @@ header{
         nav{ 
             margin:  auto;
             width:800px;
+            .cerrar{
+                display: none;
+            }
         }
         nav ul{
             list-style: none;
@@ -28,7 +31,61 @@ header{
             border-bottom: 1px solid #252525;
         }
             nav ul li:hover ul{
-            display: block;  
+            display: block;   
+        }   
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+        width: 100%;
+       
+
+        nav {
+            left: -50px;         
+            position: relative;
+            margin-top: 60px;
+           
+            width: 80%;
+            background-image:$degradado;
+            height: 100vh;
+            z-index: 99999;
+            opacity: .95;
+          
+           
+            ul{
+                margin-top: 60px;
+                display: flex;
+                flex-wrap: wrap;
+                right: -60px;
+                
+            }
+            li{
+                width: 100%;
+                padding: 20px 30px;
+                color: white;
+                text-align: end;
+            }
+            li:hover{
+                border-radius: 15px 0px 0px 0px;
+                background-color: #f1f1f1;
+                color: white;
+            }
+            nav ul a:hover{
+                color: white;
+            }
+            a{
+                color: white;
+            }
         }
-            
-        }
+    
+    }
+
+    .hamburguesa {
+        display: block;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    
+}
