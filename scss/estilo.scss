@@ -184,7 +184,8 @@ main {
 
     }
 
-    section {
+    section, main {
+        width: 100%;
 
         .foto_perfil {
 
@@ -216,6 +217,7 @@ main {
         .redes {
             display: flex;
             justify-content: center;
+            margin-bottom: 50px;
         }
 
         a {
@@ -227,14 +229,25 @@ main {
             justify-content: center;
             width: 100%;
             margin: auto;
-            height: 500px;
+            height: 120px;
+        }
 
-            button {
-                margin-bottom: 100px;
-            }
+        button {
+            padding: 0;
+            background-image: $degradado;
+            width: 200px;
+            height: 35px;
+            border-radius: 18px;
+            border-style: none;
+            color: white;
+            font-size: 0.8rem;
+            margin-top: 40px;
+            margin: 0;
+            cursor: pointer;
         }
     }
 
+    
 
     .container-fluid {
         background-color: #feffff;
@@ -323,6 +336,12 @@ main {
     }
 
 }
+
+footer{
+    display: none;
+        
+}
+
 
 /*EXPERIENCEIAS*/
 
