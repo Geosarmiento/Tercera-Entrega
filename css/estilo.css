@@ -34,8 +34,9 @@ header {
 @media screen and (max-width: 640px) {
   header {
     width: 100%; }
+    header .mover {
+      left: -800px; }
     header nav {
-      left: -50px;
       position: relative;
       margin-top: 60px;
       width: 80%;
@@ -61,10 +62,34 @@ header {
         color: white; }
       header nav a {
         color: white; }
-  .hamburguesa {
-    display: block;
-    padding: 20px;
-    cursor: pointer; } }
+  nav.menu.show {
+    margin-left: 20px; }
+  .button-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-style: none;
+    padding: 20px; }
+    .button-menu span {
+      width: 37px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #444444;
+      text-decoration: none;
+      border-radius: 3px;
+      transform-origin: 4px 0px;
+      transition: all 0.2s linear; }
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff; }
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px); }
+  .button-menu.close span:nth-child(3) {
+    display: none; } }
 
 /*CONTACTO*/
 .container-fluid {
@@ -251,9 +276,6 @@ body {
   background: -webkit-linear-gradient(left, #d2ebf9 13%, #feffff 100%);
   /* Chrome10-25,Safari5.1-6 */ }
 
-.hamburguesa {
-  display: none; }
-
 .contenedor_fondo_color {
   display: inline-block;
   position: absolute;
@@ -309,7 +331,7 @@ p {
   padding: 5px 5px;
   margin-left: 10px; }
 
-button {
+.button-contact {
   padding: 5px 10px;
   background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 200%);
   width: 200px;
@@ -332,12 +354,6 @@ main {
     width: 100%;
     display: flex;
     justify-content: end; }
-  .hamburguesa {
-    display: block;
-    padding: 20px;
-    cursor: pointer; }
-  nav {
-    display: none; }
   .contenedor_fondo_color {
     display: inline-block;
     position: absolute;
@@ -385,7 +401,7 @@ main {
       width: 100%;
       margin: auto;
       height: 120px; }
-    section button, main button {
+    section .button-contact, main .button-contact {
       padding: 0;
       background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 200%);
       width: 200px;

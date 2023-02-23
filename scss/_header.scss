@@ -40,12 +40,13 @@ header{
     header {
         width: 100%;
        
-
-        nav {
-            left: -50px;         
+         .mover{
+            left: -800px; 
+         
+        }
+        nav {    
             position: relative;
             margin-top: 60px;
-           
             width: 80%;
             background-image:$degradado;
             height: 100vh;
@@ -81,11 +82,48 @@ header{
     
     }
 
-    .hamburguesa {
-        display: block;
-        padding: 20px;
-        cursor: pointer;
+   
+    nav.menu.show{
+     margin-left: 20px;
+
     }
+    .button-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-style: none;
+   
+    padding: 20px;
+
+    span{
+            width: 37px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: #444444;
+            text-decoration: none;
+            border-radius: 3px;
+            transform-origin: 4px 0px;
+            transition: all 0.2s linear;
+    }
+}
+
+
+.button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+  }
+  
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  
+  .button-menu.close span:nth-child(3) {
+    display: none;
+  }
 
     
 }

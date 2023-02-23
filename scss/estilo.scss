@@ -22,9 +22,7 @@ body {
     ;
 }
 
-.hamburguesa {
-    display: none;
-}
+
 
 .contenedor_fondo_color {
     display: inline-block;
@@ -105,7 +103,7 @@ p {
     margin-left: 10px;
 }
 
-button {
+.button-contact {
     padding: 5px 10px;
     background-image: $degradado;
     width: 200px;
@@ -146,18 +144,6 @@ main {
         display: flex;
         justify-content: end;
     }
-
-    .hamburguesa {
-        display: block;
-        padding: 20px;
-        cursor: pointer;
-    }
-
-    nav {
-        display: none;
-
-    }
-
 
     .contenedor_fondo_color {
         display: inline-block;
@@ -232,7 +218,7 @@ main {
             height: 120px;
         }
 
-        button {
+        .button-contact {
             padding: 0;
             background-image: $degradado;
             width: 200px;

@@ -31,11 +31,10 @@
 
 
     <header>
-        <span class="hamburguesa" id="hamburguesa"> 
-            <img src="../assets/img/menu_ham.png" alt="">
-        </span>
+
+        
     
-        <nav class="animate__animated animate__flipInX">
+        <nav id="nav" class="animate__animated animate__flipInX">
             <ul class="menu">
                 <li ><a href="./index.html "  > Home</li></a>
                 <li><a href="../pages/about.html">About </li></a>
@@ -44,12 +43,19 @@
                 <li><a href="../pages/academy.html">Academy</li></a>
                 <li><a href="../pages/contact.html">Contact</li></a>
             </ul>
-        </nav>           
+        </nav>     
+        
+        <button class="button-menu" id="b-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
     </header>
 
     <section >
 
-            <div class="home">
+            <div id="mover" class="home">
                 <div class="foto_perfil_movil animate__animated animate__fadeInRight"></div>
                 <h1 class="animate__animated animate__bounce">Hi, I´m Frontend Developer</h1>
 
@@ -66,7 +72,7 @@
                  </div>
 
                  <div class="centrar animate__animated animate__fadeInUp">
-                 <button> CONTACT</button>
+                 <button id="go" class="button-contact"> CONTACT</button>
                 </div>
 
             </div>
