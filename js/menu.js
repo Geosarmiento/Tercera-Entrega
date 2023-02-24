@@ -1,11 +1,9 @@
-function poner(){
-    document.getElementById("mover").classList.toggle("mover");
+const abrir = document.getElementById("nav")
+const toggle = document.getElementById("_toggle")
+
+_toggle.addEventListener("click", function(){
+
+  nav.classList.toggle("open");
+  _toggle.classList.toggle("close")
 }
-document.getElementById("go").onclick = function(){
-    poner();
-}; {
-    
-}
-
-
-
+)

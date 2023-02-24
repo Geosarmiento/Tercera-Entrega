@@ -9,12 +9,13 @@ $degradado: linear-gradient(45deg, #3023AE 0%, #FF0099 200%);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Uchen&display=swap');
 
-@import "header";
+@import "header", "nav-bar";
 @import "contact";
 @import "fotter";
 @import "about";
 @import "gallery";
 @import "experience";
+;
 
 body {
     background: -webkit-linear-gradient(left, #d2ebf9 13%, #feffff 100%);
@@ -335,3 +336,17 @@ footer{
     width: 90%;
     ;
 }
+
+.uno{
+    p{
+        color:red;
+    }
+    font-size: 62px;
+}
+
+.dos{
+    font-size: 14px;
+    background-color: #3023AE;
+}
+
+
