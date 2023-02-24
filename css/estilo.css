@@ -63,7 +63,7 @@ a {
   .close span:nth-child(3) {
     transform: rotate(-45deg) translate(-5px, 1px); }
   .open {
-    transform: translateX(0) !important; } }
+    transform: translateX(90px) !important; } }
 
 /*
         nav{ 
