@@ -21,9 +21,14 @@ body {
     background: -webkit-linear-gradient(left, #d2ebf9 13%, #feffff 100%);
     /* Chrome10-25,Safari5.1-6 */
     ;
+    
 }
 
-
+header{
+    width: 1044px;
+    margin: auto;
+    
+}
 
 .contenedor_fondo_color {
     display: inline-block;
@@ -49,13 +54,14 @@ body {
 }
 
 
+
 main {
-    width: 1044px;
+    width: 100%;
     margin: auto;
 }
 
 section {
-    width: 1044px;
+  
     margin: auto;
     display: flex;
     justify-content: center;

@@ -2,6 +2,8 @@
    
 
     .navbar{
+        width: 1044px;
+        margin: auto;
         height: 60px;
         display: flex;
         justify-content: space-between;
@@ -28,20 +30,31 @@
 
     @media screen and (max-width: 468px) {
 
+        header{
+            width: 100%;
+        }
+        .hiden{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: absolute;
+        }
+
         .navbar{
             width: 100%;
             position: absolute;
-            height: 100%;
             background-image: $degradado;
             transform: translateX(100%);
             top:60px;
             opacity: 0.98;
             left: 0;
+            height: 900px;
             transition: all 1s ease;
         }
         .nav_item{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             
         }
        
