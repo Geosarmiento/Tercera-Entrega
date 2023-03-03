@@ -248,51 +248,63 @@ footer {
   text-align: center; }
 
 /*ABOUt*/
-.container_about {
+.container h1 {
+  margin: auto;
+  text-align: center; }
+
+.container .contenedor_about {
   display: flex;
-  margin-top: 50px;
-  gap: 40px; }
-  .container_about .container_barras {
-    width: 95%;
-    height: 300px; }
-  .container_about .parte1 {
-    width: 500px; }
-  .container_about .parte2 {
-    padding: 20px;
-    width: 400px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.22);
-    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.22); }
+  padding: 60px;
+  flex-wrap: wrap; }
+  .container .contenedor_about .nombre {
+    padding: 50px;
+    text-align: right;
+    line-height: .1; }
+  .container .contenedor_about .foto {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    background-image: url("../assets/img/perfil.png");
+    background-size: cover;
+    background-position: center; }
+  .container .contenedor_about .datos {
+    padding: 50px;
+    line-height: .1; }
+
+.habilidades {
+  text-align: center; }
+  .habilidades p {
+    text-align: start; }
 
 @media screen and (max-width: 640px) {
-  main {
-    width: 100%; }
-  .container_about {
+  .contenedor_about {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
-    align-items: center;
-    padding: 10px; }
-    .container_about .parte1 {
-      width: 100%; }
-    .container_about .parte2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 90%;
-      background-color: #ffffff;
-      border-radius: 20px;
-      -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.22);
-      -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.22);
-      box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.22);
-      margin-bottom: 40px; }
-      .container_about .parte2 .container_barras {
-        width: 80%;
-        height: 280px; } }
+    padding: 0; }
+    .contenedor_about .nombre {
+      width: 100%;
+      order: 2;
+      text-align: left;
+      line-height: .1; }
+    .contenedor_about .foto {
+      order: 1;
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      background-image: url("../assets/img/perfil.png");
+      background-size: cover;
+      background-position: center; }
+    .contenedor_about .datos {
+      order: 3;
+      padding: 50px;
+      line-height: .1; } }
+
+.container_barras {
+  width: 80%;
+  margin: auto; }
 
 /*GALLERY*/
 .container_galeria {
